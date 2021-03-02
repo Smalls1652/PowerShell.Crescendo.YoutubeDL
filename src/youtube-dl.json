@@ -1,0 +1,73 @@
+{
+    "$schema": "./Microsoft.PowerShell.Crescendo.Schema.json",
+    "Verb": "Invoke",
+    "Noun": "YoutubeDlCommand",
+    "OriginalName": "youtube-dl",
+    "Parameters": [
+        {
+            "Name": "Url",
+            "Position": 0,
+            "OriginalPosition": 0,
+            "ParameterType": "string",
+            "ParameterSetName": [
+                "VideoDownload",
+                "VideoDownloadAdditionalParams",
+                "VideoGetInfo"
+            ]
+        },
+        {
+            "Name": "Help",
+            "OriginalName": "--help",
+            "Position": 0,
+            "ParameterType": "switch",
+            "ParameterSetName": [
+                "GetHelp"
+            ]
+        },
+        {
+            "Name": "Version",
+            "OriginalName": "--version",
+            "Position": 0,
+            "ParameterType": "switch",
+            "ParameterSetName": [
+                "GetVersionInfo"
+            ]
+        },
+        {
+            "Name": "ListExtractors",
+            "OriginalName": "--list-extractors",
+            "Position": 0,
+            "ParameterType": "switch",
+            "ParameterSetName": [
+                "ListSupportedExtractors"
+            ]
+        },
+        {
+            "Name": "ListFormats",
+            "OriginalName": "--list-formats",
+            "Position": 1,
+            "ParameterType": "switch",
+            "ParameterSetName": [
+                "VideoGetInfo"
+            ]
+        },
+        {
+            "Name": "Format",
+            "OriginalName": "--format",
+            "Position": 1,
+            "ParameterType": "string",
+            "ParameterSetName": [
+                "VideoDownloadAdditionalParams"
+            ]
+        },
+        {
+            "Name": "AddMetadata",
+            "OriginalName": "--add-metadata",
+            "Position": 2,
+            "ParameterType": "switch",
+            "ParameterSetName": [
+                "VideoDownloadAdditionalParams"
+            ]
+        }
+    ]
+}
